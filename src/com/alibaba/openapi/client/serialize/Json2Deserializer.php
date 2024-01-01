@@ -12,13 +12,13 @@ class Json2Deserializer implements DeSerializer
     }
     public function deSerialize($deSerializer, $resultDefinition, $charSet = null)
     {
-        $stdResult = json_decode($deSerializer);
+        $stdResult = json_decode($deSerializer,true);
         $resultDefinition->setStdResult((array)$stdResult);
         return $resultDefinition;
     }
     public function buildException($deSerializer, $resultType, $charSet = null)
     {
-        $exceptionStdResult = json_decode($deSerializer);
+        $exceptionStdResult = json_decode($deSerializer,true);
         $errorCode = $exceptionStdResult->{"error_code"};
         $errorMessage = $exceptionStdResult->{"error_message"};
 
