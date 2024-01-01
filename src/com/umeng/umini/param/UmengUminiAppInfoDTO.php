@@ -158,25 +158,25 @@ class UmengUminiAppInfoDTO extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("secondLevel", $this->stdResult)) {
+        if (array_key_exists("secondLevel", (array) $this->stdResult)) {
             $this->secondLevel = $this->stdResult->{"secondLevel"};
         }
-        if (array_key_exists("dataSourceId", $this->stdResult)) {
+        if (array_key_exists("dataSourceId",(array)  $this->stdResult)) {
             $this->dataSourceId = $this->stdResult->{"dataSourceId"};
         }
-        if (array_key_exists("appName", $this->stdResult)) {
+        if (array_key_exists("appName", (array) $this->stdResult)) {
             $this->appName = $this->stdResult->{"appName"};
         }
-        if (array_key_exists("gmtCreate", $this->stdResult)) {
+        if (array_key_exists("gmtCreate",(array)  $this->stdResult)) {
             $this->gmtCreate = $this->stdResult->{"gmtCreate"};
         }
-        if (array_key_exists("firstLevel", $this->stdResult)) {
+        if (array_key_exists("firstLevel",(array)  $this->stdResult)) {
             $this->firstLevel = $this->stdResult->{"firstLevel"};
         }
-        if (array_key_exists("userName", $this->stdResult)) {
+        if (array_key_exists("userName", (array) $this->stdResult)) {
             $this->userName = $this->stdResult->{"userName"};
         }
-        if (array_key_exists("platform", $this->stdResult)) {
+        if (array_key_exists("platform", (array) $this->stdResult)) {
             $this->platform = $this->stdResult->{"platform"};
         }
     }
@@ -185,25 +185,25 @@ class UmengUminiAppInfoDTO extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("secondLevel", $this->arrayResult)) {
+        if (array_key_exists("secondLevel", (array) $this->arrayResult)) {
             $this->secondLevel = $arrayResult['secondLevel'];
         }
-        if (array_key_exists("dataSourceId", $this->arrayResult)) {
+        if (array_key_exists("dataSourceId", (array) $this->arrayResult)) {
             $this->dataSourceId = $arrayResult['dataSourceId'];
         }
-        if (array_key_exists("appName", $this->arrayResult)) {
+        if (array_key_exists("appName",(array)  $this->arrayResult)) {
             $this->appName = $arrayResult['appName'];
         }
-        if (array_key_exists("gmtCreate", $this->arrayResult)) {
+        if (array_key_exists("gmtCreate", (array) $this->arrayResult)) {
             $this->gmtCreate = $arrayResult['gmtCreate'];
         }
-        if (array_key_exists("firstLevel", $this->arrayResult)) {
+        if (array_key_exists("firstLevel", (array) $this->arrayResult)) {
             $this->firstLevel = $arrayResult['firstLevel'];
         }
-        if (array_key_exists("userName", $this->arrayResult)) {
+        if (array_key_exists("userName",(array)  $this->arrayResult)) {
             $this->userName = $arrayResult['userName'];
         }
-        if (array_key_exists("platform", $this->arrayResult)) {
+        if (array_key_exists("platform",(array)  $this->arrayResult)) {
             $this->platform = $arrayResult['platform'];
         }
     }

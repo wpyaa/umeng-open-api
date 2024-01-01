@@ -74,13 +74,13 @@ class UmengUminiEventIndicatorDTO extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("dateTime", $this->stdResult)) {
+        if (array_key_exists("dateTime", (array) $this->stdResult)) {
             $this->dateTime = $this->stdResult->{"dateTime"};
         }
-        if (array_key_exists("count", $this->stdResult)) {
+        if (array_key_exists("count", (array) $this->stdResult)) {
             $this->count = $this->stdResult->{"count"};
         }
-        if (array_key_exists("device", $this->stdResult)) {
+        if (array_key_exists("device",(array)  $this->stdResult)) {
             $this->device = $this->stdResult->{"device"};
         }
     }
@@ -89,13 +89,13 @@ class UmengUminiEventIndicatorDTO extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("dateTime", $this->arrayResult)) {
+        if (array_key_exists("dateTime", (array) $this->arrayResult)) {
             $this->dateTime = $arrayResult['dateTime'];
         }
-        if (array_key_exists("count", $this->arrayResult)) {
+        if (array_key_exists("count", (array) $this->arrayResult)) {
             $this->count = $arrayResult['count'];
         }
-        if (array_key_exists("device", $this->arrayResult)) {
+        if (array_key_exists("device",(array)  $this->arrayResult)) {
             $this->device = $arrayResult['device'];
         }
     }

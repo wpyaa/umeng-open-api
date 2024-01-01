@@ -158,25 +158,25 @@ class UmengUminiAppIndicatorDTO extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("dateTime", $this->stdResult)) {
+        if (array_key_exists("dateTime",(array)  $this->stdResult)) {
             $this->dateTime = $this->stdResult->{"dateTime"};
         }
-        if (array_key_exists("newUser", $this->stdResult)) {
+        if (array_key_exists("newUser",(array)  $this->stdResult)) {
             $this->newUser = $this->stdResult->{"newUser"};
         }
-        if (array_key_exists("activeUser", $this->stdResult)) {
+        if (array_key_exists("activeUser", (array) $this->stdResult)) {
             $this->activeUser = $this->stdResult->{"activeUser"};
         }
-        if (array_key_exists("launch", $this->stdResult)) {
+        if (array_key_exists("launch", (array) $this->stdResult)) {
             $this->launch = $this->stdResult->{"launch"};
         }
-        if (array_key_exists("visitTimes", $this->stdResult)) {
+        if (array_key_exists("visitTimes",(array)  $this->stdResult)) {
             $this->visitTimes = $this->stdResult->{"visitTimes"};
         }
-        if (array_key_exists("onceDuration", $this->stdResult)) {
+        if (array_key_exists("onceDuration",(array)  $this->stdResult)) {
             $this->onceDuration = $this->stdResult->{"onceDuration"};
         }
-        if (array_key_exists("dailyDuration", $this->stdResult)) {
+        if (array_key_exists("dailyDuration",(array)  $this->stdResult)) {
             $this->dailyDuration = $this->stdResult->{"dailyDuration"};
         }
     }
@@ -185,25 +185,25 @@ class UmengUminiAppIndicatorDTO extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("dateTime", $this->arrayResult)) {
+        if (array_key_exists("dateTime",(array) $this->arrayResult)) {
             $this->dateTime = $arrayResult['dateTime'];
         }
-        if (array_key_exists("newUser", $this->arrayResult)) {
+        if (array_key_exists("newUser",(array)  $this->arrayResult)) {
             $this->newUser = $arrayResult['newUser'];
         }
-        if (array_key_exists("activeUser", $this->arrayResult)) {
+        if (array_key_exists("activeUser", (array) $this->arrayResult)) {
             $this->activeUser = $arrayResult['activeUser'];
         }
-        if (array_key_exists("launch", $this->arrayResult)) {
+        if (array_key_exists("launch",(array)  $this->arrayResult)) {
             $this->launch = $arrayResult['launch'];
         }
-        if (array_key_exists("visitTimes", $this->arrayResult)) {
+        if (array_key_exists("visitTimes", (array) $this->arrayResult)) {
             $this->visitTimes = $arrayResult['visitTimes'];
         }
-        if (array_key_exists("onceDuration", $this->arrayResult)) {
+        if (array_key_exists("onceDuration", (array) $this->arrayResult)) {
             $this->onceDuration = $arrayResult['onceDuration'];
         }
-        if (array_key_exists("dailyDuration", $this->arrayResult)) {
+        if (array_key_exists("dailyDuration",(array)  $this->arrayResult)) {
             $this->dailyDuration = $arrayResult['dailyDuration'];
         }
     }

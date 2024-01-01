@@ -116,19 +116,19 @@ class UmengUminiLandingPageDTO extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("page", $this->stdResult)) {
+        if (array_key_exists("page",(array)  $this->stdResult)) {
             $this->page = $this->stdResult->{"page"};
         }
-        if (array_key_exists("displayName", $this->stdResult)) {
+        if (array_key_exists("displayName", (array) $this->stdResult)) {
             $this->displayName = $this->stdResult->{"displayName"};
         }
-        if (array_key_exists("visitTimes", $this->stdResult)) {
+        if (array_key_exists("visitTimes", (array) $this->stdResult)) {
             $this->visitTimes = $this->stdResult->{"visitTimes"};
         }
-        if (array_key_exists("visitUser", $this->stdResult)) {
+        if (array_key_exists("visitUser",(array)  $this->stdResult)) {
             $this->visitUser = $this->stdResult->{"visitUser"};
         }
-        if (array_key_exists("jumpRatio", $this->stdResult)) {
+        if (array_key_exists("jumpRatio", (array) $this->stdResult)) {
             $this->jumpRatio = $this->stdResult->{"jumpRatio"};
         }
     }
@@ -137,19 +137,19 @@ class UmengUminiLandingPageDTO extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("page", $this->arrayResult)) {
+        if (array_key_exists("page", (array) $this->arrayResult)) {
             $this->page = $arrayResult['page'];
         }
-        if (array_key_exists("displayName", $this->arrayResult)) {
+        if (array_key_exists("displayName",(array)  $this->arrayResult)) {
             $this->displayName = $arrayResult['displayName'];
         }
-        if (array_key_exists("visitTimes", $this->arrayResult)) {
+        if (array_key_exists("visitTimes", (array) $this->arrayResult)) {
             $this->visitTimes = $arrayResult['visitTimes'];
         }
-        if (array_key_exists("visitUser", $this->arrayResult)) {
+        if (array_key_exists("visitUser",(array)  $this->arrayResult)) {
             $this->visitUser = $arrayResult['visitUser'];
         }
-        if (array_key_exists("jumpRatio", $this->arrayResult)) {
+        if (array_key_exists("jumpRatio",(array)  $this->arrayResult)) {
             $this->jumpRatio = $arrayResult['jumpRatio'];
         }
     }

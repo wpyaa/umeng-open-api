@@ -95,16 +95,16 @@ class UmengUminiEditPathDisplayNameResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("msg", $this->stdResult)) {
+        if (array_key_exists("msg", (array) $this->stdResult)) {
             $this->msg = $this->stdResult->{"msg"};
         }
-        if (array_key_exists("code", $this->stdResult)) {
+        if (array_key_exists("code",(array)  $this->stdResult)) {
             $this->code = $this->stdResult->{"code"};
         }
-        if (array_key_exists("success", $this->stdResult)) {
+        if (array_key_exists("success", (array) $this->stdResult)) {
             $this->success = $this->stdResult->{"success"};
         }
-        if (array_key_exists("data", $this->stdResult)) {
+        if (array_key_exists("data", (array) $this->stdResult)) {
             $this->data = $this->stdResult->{"data"};
         }
     }
@@ -113,16 +113,16 @@ class UmengUminiEditPathDisplayNameResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("msg", $this->arrayResult)) {
+        if (array_key_exists("msg", (array) $this->arrayResult)) {
             $this->msg = $arrayResult['msg'];
         }
-        if (array_key_exists("code", $this->arrayResult)) {
+        if (array_key_exists("code", (array) $this->arrayResult)) {
             $this->code = $arrayResult['code'];
         }
-        if (array_key_exists("success", $this->arrayResult)) {
+        if (array_key_exists("success",(array)  $this->arrayResult)) {
             $this->success = $arrayResult['success'];
         }
-        if (array_key_exists("data", $this->arrayResult)) {
+        if (array_key_exists("data", (array) $this->arrayResult)) {
             $this->data = $arrayResult['data'];
         }
     }

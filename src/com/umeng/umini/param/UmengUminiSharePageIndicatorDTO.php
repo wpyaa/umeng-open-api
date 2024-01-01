@@ -137,22 +137,22 @@ class UmengUminiSharePageIndicatorDTO extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("reflowRatio", $this->stdResult)) {
+        if (array_key_exists("reflowRatio", (array) $this->stdResult)) {
             $this->reflowRatio = $this->stdResult->{"reflowRatio"};
         }
-        if (array_key_exists("path", $this->stdResult)) {
+        if (array_key_exists("path", (array) $this->stdResult)) {
             $this->path = $this->stdResult->{"path"};
         }
-        if (array_key_exists("reflow", $this->stdResult)) {
+        if (array_key_exists("reflow", (array) $this->stdResult)) {
             $this->reflow = $this->stdResult->{"reflow"};
         }
-        if (array_key_exists("newUser", $this->stdResult)) {
+        if (array_key_exists("newUser", (array) $this->stdResult)) {
             $this->newUser = $this->stdResult->{"newUser"};
         }
-        if (array_key_exists("count", $this->stdResult)) {
+        if (array_key_exists("count",(array)  $this->stdResult)) {
             $this->count = $this->stdResult->{"count"};
         }
-        if (array_key_exists("user", $this->stdResult)) {
+        if (array_key_exists("user",(array)  $this->stdResult)) {
             $this->user = $this->stdResult->{"user"};
         }
     }
@@ -161,22 +161,22 @@ class UmengUminiSharePageIndicatorDTO extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("reflowRatio", $this->arrayResult)) {
+        if (array_key_exists("reflowRatio", (array) $this->arrayResult)) {
             $this->reflowRatio = $arrayResult['reflowRatio'];
         }
-        if (array_key_exists("path", $this->arrayResult)) {
+        if (array_key_exists("path", (array) $this->arrayResult)) {
             $this->path = $arrayResult['path'];
         }
-        if (array_key_exists("reflow", $this->arrayResult)) {
+        if (array_key_exists("reflow", (array) $this->arrayResult)) {
             $this->reflow = $arrayResult['reflow'];
         }
-        if (array_key_exists("newUser", $this->arrayResult)) {
+        if (array_key_exists("newUser", (array) $this->arrayResult)) {
             $this->newUser = $arrayResult['newUser'];
         }
-        if (array_key_exists("count", $this->arrayResult)) {
+        if (array_key_exists("count",(array)  $this->arrayResult)) {
             $this->count = $arrayResult['count'];
         }
-        if (array_key_exists("user", $this->arrayResult)) {
+        if (array_key_exists("user",(array)  $this->arrayResult)) {
             $this->user = $arrayResult['user'];
         }
     }

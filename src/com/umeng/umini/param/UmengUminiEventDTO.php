@@ -53,10 +53,10 @@ class UmengUminiEventDTO extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("eventName", $this->stdResult)) {
+        if (array_key_exists("eventName",(array)  $this->stdResult)) {
             $this->eventName = $this->stdResult->{"eventName"};
         }
-        if (array_key_exists("displayName", $this->stdResult)) {
+        if (array_key_exists("displayName",(array)  $this->stdResult)) {
             $this->displayName = $this->stdResult->{"displayName"};
         }
     }
@@ -65,10 +65,10 @@ class UmengUminiEventDTO extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("eventName", $this->arrayResult)) {
+        if (array_key_exists("eventName",(array)  $this->arrayResult)) {
             $this->eventName = $arrayResult['eventName'];
         }
-        if (array_key_exists("displayName", $this->arrayResult)) {
+        if (array_key_exists("displayName",(array)  $this->arrayResult)) {
             $this->displayName = $arrayResult['displayName'];
         }
     }
