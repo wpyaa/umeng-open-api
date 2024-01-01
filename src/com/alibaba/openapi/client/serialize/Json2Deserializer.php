@@ -13,7 +13,7 @@ class Json2Deserializer implements DeSerializer
     public function deSerialize($deSerializer, $resultDefinition, $charSet = null)
     {
         $stdResult = json_decode($deSerializer);
-        $resultDefinition->setStdResult($stdResult);
+        $resultDefinition->setStdResult((array)$stdResult);
         return $resultDefinition;
     }
     public function buildException($deSerializer, $resultType, $charSet = null)
