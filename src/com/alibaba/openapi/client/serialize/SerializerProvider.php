@@ -1,9 +1,9 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\alibaba\openapi\client\serialize;
+namespace Ranj\UmengOpenAPI\com\alibaba\openapi\client\serialize;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\serialize\Json2Deserializer;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\serialize\Param2RequestSerializer;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\policy\DataProtocol;
+use Ranj\UmengOpenAPI\com\alibaba\openapi\client\serialize\Json2Deserializer;
+use Ranj\UmengOpenAPI\com\alibaba\openapi\client\serialize\Param2RequestSerializer;
+use Ranj\UmengOpenAPI\com\alibaba\openapi\client\policy\DataProtocol;
 
 class SerializerProvider
 {

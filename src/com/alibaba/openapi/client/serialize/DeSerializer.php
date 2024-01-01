@@ -1,5 +1,5 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\alibaba\openapi\client\serialize;
+namespace Ranj\UmengOpenAPI\com\alibaba\openapi\client\serialize;
 
 interface DeSerializer
 {

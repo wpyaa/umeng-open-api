@@ -1,10 +1,10 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\uapp\param;
+namespace Ranj\UmengOpenAPI\com\umeng\uapp\param;
 
 use ArrayObject;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
-use Roiwk\UmengOpenAPI\com\umeng\uapp\param\UmengUappParamInfo;
+use Ranj\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Ranj\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Ranj\UmengOpenAPI\com\umeng\uapp\param\UmengUappParamInfo;
 
 class UmengUappEventParamListResult
 {

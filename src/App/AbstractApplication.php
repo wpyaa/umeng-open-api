@@ -1,13 +1,13 @@
 <?php
 
-namespace Roiwk\UmengOpenAPI\App;
+namespace Ranj\UmengOpenAPI\App;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\APIId;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\APIRequest;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\exception\OceanException;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\policy\ClientPolicy;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\policy\RequestPolicy;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\SyncAPIClient;
+use Ranj\UmengOpenAPI\com\alibaba\openapi\client\APIId;
+use Ranj\UmengOpenAPI\com\alibaba\openapi\client\APIRequest;
+use Ranj\UmengOpenAPI\com\alibaba\openapi\client\exception\OceanException;
+use Ranj\UmengOpenAPI\com\alibaba\openapi\client\policy\ClientPolicy;
+use Ranj\UmengOpenAPI\com\alibaba\openapi\client\policy\RequestPolicy;
+use Ranj\UmengOpenAPI\com\alibaba\openapi\client\SyncAPIClient;
 
 abstract class AbstractApplication
 {

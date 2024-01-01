@@ -1,10 +1,10 @@
 <?php
 
-namespace Roiwk\UmengOpenAPI;
+namespace Ranj\UmengOpenAPI;
 
-use Roiwk\UmengOpenAPI\App\Apptrack;
-use Roiwk\UmengOpenAPI\App\Uapp;
-use Roiwk\UmengOpenAPI\App\Umini;
+use Ranj\UmengOpenAPI\App\Apptrack;
+use Ranj\UmengOpenAPI\App\Uapp;
+use Ranj\UmengOpenAPI\App\Umini;
 
 class Factory
 {

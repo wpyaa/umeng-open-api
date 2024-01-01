@@ -1,5 +1,5 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\alibaba\openapi\client\util;
+namespace Ranj\UmengOpenAPI\com\alibaba\openapi\client\util;
 
 class ExceptionParser
 {

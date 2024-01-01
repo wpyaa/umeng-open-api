@@ -1,8 +1,8 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\umeng\umini\param;
+namespace Ranj\UmengOpenAPI\com\umeng\umini\param;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
+use Ranj\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
+use Ranj\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
 
 class UmengUminiEventDTO extends SDKDomain
 {

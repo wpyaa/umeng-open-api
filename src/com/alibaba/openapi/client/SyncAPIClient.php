@@ -1,11 +1,11 @@
 <?php
-namespace Roiwk\UmengOpenAPI\com\alibaba\openapi\client;
+namespace Ranj\UmengOpenAPI\com\alibaba\openapi\client;
 
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\policy\ClientPolicy;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\policy\RequestPolicy;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\serialize\SerializerProvider;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\util\DateUtil;
-use Roiwk\UmengOpenAPI\com\alibaba\openapi\client\util\SignatureUtil;
+use Ranj\UmengOpenAPI\com\alibaba\openapi\client\policy\ClientPolicy;
+use Ranj\UmengOpenAPI\com\alibaba\openapi\client\policy\RequestPolicy;
+use Ranj\UmengOpenAPI\com\alibaba\openapi\client\serialize\SerializerProvider;
+use Ranj\UmengOpenAPI\com\alibaba\openapi\client\util\DateUtil;
+use Ranj\UmengOpenAPI\com\alibaba\openapi\client\util\SignatureUtil;
 
 class SyncAPIClient
 {
