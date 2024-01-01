@@ -74,13 +74,13 @@ class UmengUminiPropertyValueCountDTO extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("count", $this->stdResult)) {
+        if (array_key_exists("count",(array)  $this->stdResult)) {
             $this->count = $this->stdResult->{"count"};
         }
-        if (array_key_exists("propertyValue", $this->stdResult)) {
+        if (array_key_exists("propertyValue", (array) $this->stdResult)) {
             $this->propertyValue = $this->stdResult->{"propertyValue"};
         }
-        if (array_key_exists("countRatio", $this->stdResult)) {
+        if (array_key_exists("countRatio", (array) $this->stdResult)) {
             $this->countRatio = $this->stdResult->{"countRatio"};
         }
     }

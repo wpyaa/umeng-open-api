@@ -32,7 +32,7 @@ class UmengUminiEventProvertyDTO extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("propertyName", $this->stdResult)) {
+        if (array_key_exists("propertyName",(array)  $this->stdResult)) {
             $this->propertyName = $this->stdResult->{"propertyName"};
         }
     }
@@ -41,7 +41,7 @@ class UmengUminiEventProvertyDTO extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("propertyName", $this->arrayResult)) {
+        if (array_key_exists("propertyName",(array)  $this->arrayResult)) {
             $this->propertyName = $arrayResult['propertyName'];
         }
     }

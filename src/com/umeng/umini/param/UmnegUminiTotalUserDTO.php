@@ -53,10 +53,10 @@ class UmnegUminiTotalUserDTO extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("dateTime", $this->stdResult)) {
+        if (array_key_exists("dateTime",(array) $this->stdResult)) {
             $this->dateTime = $this->stdResult->{"dateTime"};
         }
-        if (array_key_exists("totalUser", $this->stdResult)) {
+        if (array_key_exists("totalUser", (array) $this->stdResult)) {
             $this->totalUser = $this->stdResult->{"totalUser"};
         }
     }
@@ -65,10 +65,10 @@ class UmnegUminiTotalUserDTO extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("dateTime", $this->arrayResult)) {
+        if (array_key_exists("dateTime",(array)  $this->arrayResult)) {
             $this->dateTime = $arrayResult['dateTime'];
         }
-        if (array_key_exists("totalUser", $this->arrayResult)) {
+        if (array_key_exists("totalUser",(array)  $this->arrayResult)) {
             $this->totalUser = $arrayResult['totalUser'];
         }
     }

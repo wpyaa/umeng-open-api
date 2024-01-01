@@ -1,6 +1,7 @@
 <?php
 namespace Ranj\UmengOpenAPI\com\umeng\apptrack\param;
 
+use ArrayObject;
 use Ranj\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
 use Ranj\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
 use Ranj\UmengOpenAPI\com\umeng\apptrack\param\UmengApptrackAppEvent;
@@ -33,7 +34,7 @@ class UmengApptrackGetMyEventDataResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("data", $this->stdResult)) {
+        if (array_key_exists("data",(array)  $this->stdResult)) {
             $dataResult=$this->stdResult->{"data"};
             $object = json_decode(json_encode($dataResult), true);
             $this->data = array();
@@ -50,7 +51,7 @@ class UmengApptrackGetMyEventDataResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("data", $this->arrayResult)) {
+        if (array_key_exists("data",(array)  $this->arrayResult)) {
             $dataResult=$arrayResult['data'];
             $this->data = new UmengApptrackAppEvent();
             $this->data->setStdResult($dataResult);

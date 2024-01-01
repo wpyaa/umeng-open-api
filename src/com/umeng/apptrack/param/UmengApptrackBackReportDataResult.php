@@ -32,7 +32,7 @@ class UmengApptrackBackReportDataResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("result", $this->stdResult)) {
+        if (array_key_exists("result", (array) $this->stdResult)) {
             $this->result = $this->stdResult->{"result"};
         }
     }
@@ -41,7 +41,7 @@ class UmengApptrackBackReportDataResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("result", $this->arrayResult)) {
+        if (array_key_exists("result",(array)  $this->arrayResult)) {
             $this->result = $arrayResult['result'];
         }
     }

@@ -116,19 +116,19 @@ class UmengApptrackAppMonitors extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("mid", $this->stdResult)) {
+        if (array_key_exists("mid",(array)  $this->stdResult)) {
             $this->mid = $this->stdResult->{"mid"};
         }
-        if (array_key_exists("mName", $this->stdResult)) {
+        if (array_key_exists("mName", (array) $this->stdResult)) {
             $this->mName = $this->stdResult->{"mName"};
         }
-        if (array_key_exists("chanName", $this->stdResult)) {
+        if (array_key_exists("chanName",(array)  $this->stdResult)) {
             $this->chanName = $this->stdResult->{"chanName"};
         }
-        if (array_key_exists("downloadUrl", $this->stdResult)) {
+        if (array_key_exists("downloadUrl", (array) $this->stdResult)) {
             $this->downloadUrl = $this->stdResult->{"downloadUrl"};
         }
-        if (array_key_exists("shortUrl", $this->stdResult)) {
+        if (array_key_exists("shortUrl",(array)  $this->stdResult)) {
             $this->shortUrl = $this->stdResult->{"shortUrl"};
         }
     }
@@ -137,19 +137,19 @@ class UmengApptrackAppMonitors extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("mid", $this->arrayResult)) {
+        if (array_key_exists("mid",(array)  $this->arrayResult)) {
             $this->mid = $arrayResult['mid'];
         }
-        if (array_key_exists("mName", $this->arrayResult)) {
+        if (array_key_exists("mName", (array) $this->arrayResult)) {
             $this->mName = $arrayResult['mName'];
         }
-        if (array_key_exists("chanName", $this->arrayResult)) {
+        if (array_key_exists("chanName",(array)  $this->arrayResult)) {
             $this->chanName = $arrayResult['chanName'];
         }
-        if (array_key_exists("downloadUrl", $this->arrayResult)) {
+        if (array_key_exists("downloadUrl",(array)  $this->arrayResult)) {
             $this->downloadUrl = $arrayResult['downloadUrl'];
         }
-        if (array_key_exists("shortUrl", $this->arrayResult)) {
+        if (array_key_exists("shortUrl", (array) $this->arrayResult)) {
             $this->shortUrl = $arrayResult['shortUrl'];
         }
     }

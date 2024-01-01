@@ -89,13 +89,13 @@ class UmengUappRetentionInfo extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("date", $this->arrayResult)) {
+        if (array_key_exists("date",(array)  $this->arrayResult)) {
             $this->date = $arrayResult['date'];
         }
-        if (array_key_exists("totalInstallUser", $this->arrayResult)) {
+        if (array_key_exists("totalInstallUser", (array) $this->arrayResult)) {
             $this->totalInstallUser = $arrayResult['totalInstallUser'];
         }
-        if (array_key_exists("retentionRate", $this->arrayResult)) {
+        if (array_key_exists("retentionRate", (array) $this->arrayResult)) {
             $this->retentionRate = $arrayResult['retentionRate'];
         }
     }

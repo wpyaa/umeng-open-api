@@ -305,46 +305,46 @@ class UmengApptrackGetStayTrendDataResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("stay1", $this->stdResult)) {
+        if (array_key_exists("stay1",(array)  $this->stdResult)) {
             $this->stay1 = $this->stdResult->{"stay1"};
         }
-        if (array_key_exists("stay2", $this->stdResult)) {
+        if (array_key_exists("stay2", (array) $this->stdResult)) {
             $this->stay2 = $this->stdResult->{"stay2"};
         }
-        if (array_key_exists("stay3", $this->stdResult)) {
+        if (array_key_exists("stay3",(array)  $this->stdResult)) {
             $this->stay3 = $this->stdResult->{"stay3"};
         }
-        if (array_key_exists("stay4", $this->stdResult)) {
+        if (array_key_exists("stay4",(array)  $this->stdResult)) {
             $this->stay4 = $this->stdResult->{"stay4"};
         }
-        if (array_key_exists("stay5", $this->stdResult)) {
+        if (array_key_exists("stay5",(array)  $this->stdResult)) {
             $this->stay5 = $this->stdResult->{"stay5"};
         }
-        if (array_key_exists("stay6", $this->stdResult)) {
+        if (array_key_exists("stay6",(array)  $this->stdResult)) {
             $this->stay6 = $this->stdResult->{"stay6"};
         }
-        if (array_key_exists("stay7", $this->stdResult)) {
+        if (array_key_exists("stay7",(array)  $this->stdResult)) {
             $this->stay7 = $this->stdResult->{"stay7"};
         }
-        if (array_key_exists("stay8", $this->stdResult)) {
+        if (array_key_exists("stay8",(array)  $this->stdResult)) {
             $this->stay8 = $this->stdResult->{"stay8"};
         }
-        if (array_key_exists("stay9", $this->stdResult)) {
+        if (array_key_exists("stay9",(array)  $this->stdResult)) {
             $this->stay9 = $this->stdResult->{"stay9"};
         }
-        if (array_key_exists("stay10", $this->stdResult)) {
+        if (array_key_exists("stay10", (array) $this->stdResult)) {
             $this->stay10 = $this->stdResult->{"stay10"};
         }
-        if (array_key_exists("stay11", $this->stdResult)) {
+        if (array_key_exists("stay11",(array)  $this->stdResult)) {
             $this->stay11 = $this->stdResult->{"stay11"};
         }
-        if (array_key_exists("stay12", $this->stdResult)) {
+        if (array_key_exists("stay12",(array)  $this->stdResult)) {
             $this->stay12 = $this->stdResult->{"stay12"};
         }
-        if (array_key_exists("stay13", $this->stdResult)) {
+        if (array_key_exists("stay13",(array)  $this->stdResult)) {
             $this->stay13 = $this->stdResult->{"stay13"};
         }
-        if (array_key_exists("stay14", $this->stdResult)) {
+        if (array_key_exists("stay14",(array)  $this->stdResult)) {
             $this->stay14 = $this->stdResult->{"stay14"};
         }
     }
@@ -353,46 +353,46 @@ class UmengApptrackGetStayTrendDataResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("stay1", $this->arrayResult)) {
+        if (array_key_exists("stay1",(array)  $this->arrayResult)) {
             $this->stay1 = $arrayResult['stay1'];
         }
-        if (array_key_exists("stay2", $this->arrayResult)) {
+        if (array_key_exists("stay2",(array)  $this->arrayResult)) {
             $this->stay2 = $arrayResult['stay2'];
         }
-        if (array_key_exists("stay3", $this->arrayResult)) {
+        if (array_key_exists("stay3", (array) $this->arrayResult)) {
             $this->stay3 = $arrayResult['stay3'];
         }
-        if (array_key_exists("stay4", $this->arrayResult)) {
+        if (array_key_exists("stay4", (array) $this->arrayResult)) {
             $this->stay4 = $arrayResult['stay4'];
         }
-        if (array_key_exists("stay5", $this->arrayResult)) {
+        if (array_key_exists("stay5", (array) $this->arrayResult)) {
             $this->stay5 = $arrayResult['stay5'];
         }
-        if (array_key_exists("stay6", $this->arrayResult)) {
+        if (array_key_exists("stay6",(array)  $this->arrayResult)) {
             $this->stay6 = $arrayResult['stay6'];
         }
-        if (array_key_exists("stay7", $this->arrayResult)) {
+        if (array_key_exists("stay7",(array)  $this->arrayResult)) {
             $this->stay7 = $arrayResult['stay7'];
         }
-        if (array_key_exists("stay8", $this->arrayResult)) {
+        if (array_key_exists("stay8",(array)  $this->arrayResult)) {
             $this->stay8 = $arrayResult['stay8'];
         }
-        if (array_key_exists("stay9", $this->arrayResult)) {
+        if (array_key_exists("stay9",(array)  $this->arrayResult)) {
             $this->stay9 = $arrayResult['stay9'];
         }
-        if (array_key_exists("stay10", $this->arrayResult)) {
+        if (array_key_exists("stay10",(array)  $this->arrayResult)) {
             $this->stay10 = $arrayResult['stay10'];
         }
-        if (array_key_exists("stay11", $this->arrayResult)) {
+        if (array_key_exists("stay11",(array)  $this->arrayResult)) {
             $this->stay11 = $arrayResult['stay11'];
         }
-        if (array_key_exists("stay12", $this->arrayResult)) {
+        if (array_key_exists("stay12",(array)  $this->arrayResult)) {
             $this->stay12 = $arrayResult['stay12'];
         }
-        if (array_key_exists("stay13", $this->arrayResult)) {
+        if (array_key_exists("stay13",(array)  $this->arrayResult)) {
             $this->stay13 = $arrayResult['stay13'];
         }
-        if (array_key_exists("stay14", $this->arrayResult)) {
+        if (array_key_exists("stay14",(array)  $this->arrayResult)) {
             $this->stay14 = $arrayResult['stay14'];
         }
     }

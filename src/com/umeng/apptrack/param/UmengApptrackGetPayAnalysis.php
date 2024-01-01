@@ -158,25 +158,25 @@ class UmengApptrackGetPayAnalysis extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("payId", $this->stdResult)) {
+        if (array_key_exists("payId",(array)  $this->stdResult)) {
             $this->payId = $this->stdResult->{"payId"};
         }
-        if (array_key_exists("payItem", $this->stdResult)) {
+        if (array_key_exists("payItem", (array) $this->stdResult)) {
             $this->payItem = $this->stdResult->{"payItem"};
         }
-        if (array_key_exists("orderId", $this->stdResult)) {
+        if (array_key_exists("orderId", (array) $this->stdResult)) {
             $this->orderId = $this->stdResult->{"orderId"};
         }
-        if (array_key_exists("amount", $this->stdResult)) {
+        if (array_key_exists("amount", (array) $this->stdResult)) {
             $this->amount = $this->stdResult->{"amount"};
         }
-        if (array_key_exists("activateDs", $this->stdResult)) {
+        if (array_key_exists("activateDs",(array)  $this->stdResult)) {
             $this->activateDs = $this->stdResult->{"activateDs"};
         }
-        if (array_key_exists("eventDs", $this->stdResult)) {
+        if (array_key_exists("eventDs",(array)  $this->stdResult)) {
             $this->eventDs = $this->stdResult->{"eventDs"};
         }
-        if (array_key_exists("clickDs", $this->stdResult)) {
+        if (array_key_exists("clickDs", (array) $this->stdResult)) {
             $this->clickDs = $this->stdResult->{"clickDs"};
         }
     }
@@ -185,25 +185,25 @@ class UmengApptrackGetPayAnalysis extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("payId", $this->arrayResult)) {
+        if (array_key_exists("payId", (array) $this->arrayResult)) {
             $this->payId = $arrayResult['payId'];
         }
-        if (array_key_exists("payItem", $this->arrayResult)) {
+        if (array_key_exists("payItem",(array)  $this->arrayResult)) {
             $this->payItem = $arrayResult['payItem'];
         }
-        if (array_key_exists("orderId", $this->arrayResult)) {
+        if (array_key_exists("orderId",(array)  $this->arrayResult)) {
             $this->orderId = $arrayResult['orderId'];
         }
-        if (array_key_exists("amount", $this->arrayResult)) {
+        if (array_key_exists("amount",(array)  $this->arrayResult)) {
             $this->amount = $arrayResult['amount'];
         }
-        if (array_key_exists("activateDs", $this->arrayResult)) {
+        if (array_key_exists("activateDs",(array)  $this->arrayResult)) {
             $this->activateDs = $arrayResult['activateDs'];
         }
-        if (array_key_exists("eventDs", $this->arrayResult)) {
+        if (array_key_exists("eventDs", (array) $this->arrayResult)) {
             $this->eventDs = $arrayResult['eventDs'];
         }
-        if (array_key_exists("clickDs", $this->arrayResult)) {
+        if (array_key_exists("clickDs",(array)  $this->arrayResult)) {
             $this->clickDs = $arrayResult['clickDs'];
         }
     }

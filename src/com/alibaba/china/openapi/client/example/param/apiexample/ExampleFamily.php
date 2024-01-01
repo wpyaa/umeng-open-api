@@ -1,6 +1,7 @@
 <?php
 namespace Ranj\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample;
 
+use ArrayObject;
 use Ranj\UmengOpenAPI\com\alibaba\openapi\client\entity\SDKDomain;
 use Ranj\UmengOpenAPI\com\alibaba\openapi\client\entity\ByteArray;
 use Ranj\UmengOpenAPI\com\alibaba\china\openapi\client\example\param\apiexample\ExamplePerson;
@@ -148,20 +149,20 @@ class ExampleFamily extends SDKDomain
     {
         $this->stdResult = $stdResult;
         $object =  json_encode($stdResult);
-        if (array_key_exists("familyNumber", $this->stdResult)) {
+        if (array_key_exists("familyNumber",(array)  $this->stdResult)) {
             $this->familyNumber = $this->stdResult->{"familyNumber"};
         }
-        if (array_key_exists("father", $this->stdResult)) {
+        if (array_key_exists("father", (array) $this->stdResult)) {
             $fatherResult = $this->stdResult->{"father"};
             $this->father = new ExamplePerson();
             $this->father->setStdResult($fatherResult);
         }
-        if (array_key_exists("mother", $this->stdResult)) {
+        if (array_key_exists("mother", (array) $this->stdResult)) {
             $motherResult = $this->stdResult->{"mother"};
             $this->mother = new ExamplePerson();
             $this->mother->setStdResult($motherResult);
         }
-        if (array_key_exists("children", $this->stdResult)) {
+        if (array_key_exists("children", (array) $this->stdResult)) {
             $childrenResult = $this->stdResult->{"children"};
             $object = json_decode(json_encode($childrenResult), true);
             $this->children = array();
@@ -172,7 +173,7 @@ class ExampleFamily extends SDKDomain
                 $this->children [$i] = $ExamplePersonResult;
             }
         }
-        if (array_key_exists("ownedCars", $this->stdResult)) {
+        if (array_key_exists("ownedCars",(array)  $this->stdResult)) {
             $ownedCarsResult = $this->stdResult->{"ownedCars"};
             $object = json_decode(json_encode($ownedCarsResult), true);
             $this->ownedCars = array();
@@ -183,7 +184,7 @@ class ExampleFamily extends SDKDomain
                 $this->ownedCars [$i] = $ExampleCarResult;
             }
         }
-        if (array_key_exists("myHouse", $this->stdResult)) {
+        if (array_key_exists("myHouse", (array) $this->stdResult)) {
             $myHouseResult = $this->stdResult->{"myHouse"};
             $this->myHouse = new ExampleHouse();
             $this->myHouse->setStdResult($myHouseResult);
@@ -193,30 +194,30 @@ class ExampleFamily extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("familyNumber", $this->arrayResult)) {
+        if (array_key_exists("familyNumber",(array)  $this->arrayResult)) {
             $this->familyNumber = $arrayResult ['familyNumber'];
         }
-        if (array_key_exists("father", $this->arrayResult)) {
+        if (array_key_exists("father",(array)  $this->arrayResult)) {
             $fatherResult = $arrayResult ['father'];
             $this->father = new ExamplePerson();
             $this->father->$this->setStdResult($fatherResult);
         }
-        if (array_key_exists("mother", $this->arrayResult)) {
+        if (array_key_exists("mother", (array) $this->arrayResult)) {
             $motherResult = $arrayResult ['mother'];
             $this->mother = new ExamplePerson();
             $this->mother->$this->setStdResult($motherResult);
         }
-        if (array_key_exists("children", $this->arrayResult)) {
+        if (array_key_exists("children", (array) $this->arrayResult)) {
             $childrenResult = $arrayResult ['children'];
             $this->children = ExamplePerson();
             $this->children->$this->setStdResult($childrenResult);
         }
-        if (array_key_exists("ownedCars", $this->arrayResult)) {
+        if (array_key_exists("ownedCars",(array)  $this->arrayResult)) {
             $ownedCarsResult = $arrayResult ['ownedCars'];
             $this->ownedCars = ExampleCar();
             $this->ownedCars->$this->setStdResult($ownedCarsResult);
         }
-        if (array_key_exists("myHouse", $this->arrayResult)) {
+        if (array_key_exists("myHouse", (array) $this->arrayResult)) {
             $myHouseResult = $arrayResult ['myHouse'];
             $this->myHouse = new ExampleHouse();
             $this->myHouse->$this->setStdResult($myHouseResult);

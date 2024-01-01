@@ -33,7 +33,7 @@ class ExampleFamilyGetResult
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("result", $this->stdResult)) {
+        if (array_key_exists("result", (array) $this->stdResult)) {
             $resultResult = $this->stdResult->{"result"};
             $this->result = new ExampleFamily();
             $this->result->setStdResult($resultResult);
@@ -43,7 +43,7 @@ class ExampleFamilyGetResult
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("result", $this->arrayResult)) {
+        if (array_key_exists("result", (array) $this->arrayResult)) {
             $resultResult = $arrayResult ['result'];
             $this->result = new ExampleFamily();
             $this->result->$this->setStdResult($resultResult);

@@ -95,16 +95,16 @@ class UmengApptrackAppRecPlan extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("planId", $this->stdResult)) {
+        if (array_key_exists("planId",(array)  $this->stdResult)) {
             $this->planId = $this->stdResult->{"planId"};
         }
-        if (array_key_exists("planName", $this->stdResult)) {
+        if (array_key_exists("planName",(array)  $this->stdResult)) {
             $this->planName = $this->stdResult->{"planName"};
         }
-        if (array_key_exists("startDay", $this->stdResult)) {
+        if (array_key_exists("startDay",(array)  $this->stdResult)) {
             $this->startDay = $this->stdResult->{"startDay"};
         }
-        if (array_key_exists("endDay", $this->stdResult)) {
+        if (array_key_exists("endDay", (array) $this->stdResult)) {
             $this->endDay = $this->stdResult->{"endDay"};
         }
     }
@@ -113,16 +113,16 @@ class UmengApptrackAppRecPlan extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("planId", $this->arrayResult)) {
+        if (array_key_exists("planId", (array) $this->arrayResult)) {
             $this->planId = $arrayResult['planId'];
         }
-        if (array_key_exists("planName", $this->arrayResult)) {
+        if (array_key_exists("planName",(array)  $this->arrayResult)) {
             $this->planName = $arrayResult['planName'];
         }
-        if (array_key_exists("startDay", $this->arrayResult)) {
+        if (array_key_exists("startDay",(array)  $this->arrayResult)) {
             $this->startDay = $arrayResult['startDay'];
         }
-        if (array_key_exists("endDay", $this->arrayResult)) {
+        if (array_key_exists("endDay",(array)  $this->arrayResult)) {
             $this->endDay = $arrayResult['endDay'];
         }
     }

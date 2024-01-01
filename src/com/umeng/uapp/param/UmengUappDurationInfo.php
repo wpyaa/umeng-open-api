@@ -74,13 +74,13 @@ class UmengUappDurationInfo extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("name", $this->stdResult)) {
+        if (array_key_exists("name", (array)$this->stdResult)) {
             $this->name = $this->stdResult->{"name"};
         }
-        if (array_key_exists("value", $this->stdResult)) {
+        if (array_key_exists("value",(array) $this->stdResult)) {
             $this->value = $this->stdResult->{"value"};
         }
-        if (array_key_exists("percent", $this->stdResult)) {
+        if (array_key_exists("percent",(array) $this->stdResult)) {
             $this->percent = $this->stdResult->{"percent"};
         }
     }

@@ -102,16 +102,16 @@ class ExamplePerson extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("name", $this->stdResult)) {
+        if (array_key_exists("name",(array)  $this->stdResult)) {
             $this->name = $this->stdResult->{"name"};
         }
-        if (array_key_exists("age", $this->stdResult)) {
+        if (array_key_exists("age", (array) $this->stdResult)) {
             $this->age = $this->stdResult->{"age"};
         }
-        if (array_key_exists("birthday", $this->stdResult)) {
+        if (array_key_exists("birthday", (array) $this->stdResult)) {
             $this->birthday = $this->stdResult->{"birthday"};
         }
-        if (array_key_exists("mobileNumber", $this->stdResult)) {
+        if (array_key_exists("mobileNumber",(array)  $this->stdResult)) {
             $this->mobileNumber = $this->stdResult->{"mobileNumber"};
         }
     }
@@ -119,16 +119,16 @@ class ExamplePerson extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("name", $this->arrayResult)) {
+        if (array_key_exists("name",(array)  $this->arrayResult)) {
             $this->name = $arrayResult ['name'];
         }
-        if (array_key_exists("age", $this->arrayResult)) {
+        if (array_key_exists("age",(array)  $this->arrayResult)) {
             $this->age = $arrayResult ['age'];
         }
-        if (array_key_exists("birthday", $this->arrayResult)) {
+        if (array_key_exists("birthday",(array)  $this->arrayResult)) {
             $this->birthday = $arrayResult ['birthday'];
         }
-        if (array_key_exists("mobileNumber", $this->arrayResult)) {
+        if (array_key_exists("mobileNumber",(array)  $this->arrayResult)) {
             $this->mobileNumber = $arrayResult ['mobileNumber'];
         }
     }

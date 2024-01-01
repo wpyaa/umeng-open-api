@@ -76,13 +76,13 @@ class UmengUminiLandingPageListDTO extends SDKDomain
     public function setStdResult($stdResult)
     {
         $this->stdResult = $stdResult;
-        if (array_key_exists("currentPage", $this->stdResult)) {
+        if (array_key_exists("currentPage", (array) $this->stdResult)) {
             $this->currentPage = $this->stdResult->{"currentPage"};
         }
-        if (array_key_exists("totalCount", $this->stdResult)) {
+        if (array_key_exists("totalCount", (array) $this->stdResult)) {
             $this->totalCount = $this->stdResult->{"totalCount"};
         }
-        if (array_key_exists("data", $this->stdResult)) {
+        if (array_key_exists("data",(array)  $this->stdResult)) {
             $dataResult=$this->stdResult->{"data"};
             $object = json_decode(json_encode($dataResult), true);
             $this->data = array();
@@ -99,13 +99,13 @@ class UmengUminiLandingPageListDTO extends SDKDomain
     public function setArrayResult($arrayResult)
     {
         $this->arrayResult = $arrayResult;
-        if (array_key_exists("currentPage", $this->arrayResult)) {
+        if (array_key_exists("currentPage", (array) $this->arrayResult)) {
             $this->currentPage = $arrayResult['currentPage'];
         }
-        if (array_key_exists("totalCount", $this->arrayResult)) {
+        if (array_key_exists("totalCount",(array)  $this->arrayResult)) {
             $this->totalCount = $arrayResult['totalCount'];
         }
-        if (array_key_exists("data", $this->arrayResult)) {
+        if (array_key_exists("data", (array) $this->arrayResult)) {
             $dataResult=$arrayResult['data'];
             $this->data = new UmengUminiLandingPageDTO();
             $this->data->setStdResult($dataResult);
