@@ -18,7 +18,7 @@ class Json2Deserializer implements DeSerializer
     }
     public function buildException($deSerializer, $resultType, $charSet = null)
     {
-        $exceptionStdResult = json_decode($deSerializer,true);
+        $exceptionStdResult = json_decode($deSerializer);
         $errorCode = $exceptionStdResult->{"error_code"};
         $errorMessage = $exceptionStdResult->{"error_message"};
 
